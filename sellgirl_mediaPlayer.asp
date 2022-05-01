@@ -1,5 +1,6 @@
 ﻿<!--HTML5播放器,自动读取变量mp3FolderPath这个文件夹下的文件,自动识别是video还是audio,20180117-->
-<link rel="stylesheet" type="text/css" href="http://video.sellgirl.com/css/sellgirl_player_list.css">
+<!--<link rel="stylesheet" type="text/css" href="http://video.sellgirl.com/css/sellgirl_player_list.css">-->
+<link rel="stylesheet" type="text/css" href="https://kahineasin.github.io/htmlAll/css/sellgirl_player_list.css">
 
 <script type="text/javascript" src="script/html5media.min.js"></script>
 
@@ -78,7 +79,7 @@ for each n in arrFiles
             tmpFileName=tmpFileName&Replace(F.Name,n&".","")
         End If
     Next
-    Response.Write "<a  href='#' src='"&mp3FolderPath&n&"' sgIdx='"&i&"' sgFmts='"&tmpFileName&"'>"&Replace(n,"_"," ")&"</a>"
+    Response.Write "<a  href='#' src='"&mp3FolderPath&n&"' lrc='"&lrcFolderPath&n&".lrc' sgIdx='"&i&"' sgFmts='"&tmpFileName&"'>"&Replace(n,"_"," ")&"</a>"
     i=i+1
 Next
 
@@ -97,8 +98,10 @@ Next
 </div>
 <script type="text/javascript">
     $(document).ready(function() {
-        var idxStr = document.getElementById("firstSongIdx").value;
-        var idx = idxStr !== undefined && idxStr !== null && idxStr !== '' ? (parseInt(idxStr)-1) : null;
+        //var idxStr = document.getElementById("firstSongIdx").value;
+        //var idx = idxStr !== undefined && idxStr !== null && idxStr !== '' ? (parseInt(idxStr) - 1) : null;
+        var urlParam = $pf.getRequest();
+        var idx = urlParam.idx !== undefined && urlParam.idx !== null && urlParam.idx !== '' ? (parseInt(urlParam.idx) - 1) : null;
         sellgirl.createMusicPlayer($('.audioContainer'), { idx:idx }).ready();
     });
 </script>

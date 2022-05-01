@@ -21,8 +21,12 @@ pageTitle="some mp3"
     <meta content="telephone=no" name="format-detection">-->
 
     <script  type="text/JavaScript"  src="script/jquery-1.7.1.min.js" ></script>
-    <script type="text/javascript" src="http://sellgirl.com/Content/js/sellgirl/EleResize.js"></script>
-    <script type="text/javascript" src="http://sellgirl.com/Content/js/sellgirl/sellgirl.js"></script>
+<!--    <script type="text/javascript" src="http://sellgirl.com/Content/js/sellgirl/EleResize.js"></script>
+    <script type="text/javascript" src="http://sellgirl.com/Content/js/sellgirl/sellgirl.js"></script>-->
+    
+    <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/EleResize.js"></script>
+    <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/sellgirl.js"></script>
+    <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/pfUtil.js"></script>
     <script  type="text/JavaScript"  src="script/pfUtil.js" ></script>
     <!--<script type="text/javascript" src="http://192.168.1.52:19005/Content/js/sellgirl/EleResize.js"></script>
     <script type="text/javascript" src="http://192.168.1.52:19005/Content/js/sellgirl/sellgirl.js"></script>-->
@@ -40,11 +44,14 @@ pageTitle="some mp3"
     <div style="position:absolute;right:0px;top:0px;z-index:3"><a href="category.html">分类目录</a></div>
     <!--<canvas id="h5Image" style="position:absolute;z-index:2;"></canvas>-->
     <%        
-dim mp3FolderPath        
+dim mp3FolderPath      
+dim lrcFolderPath     
         if Request.QueryString("level")="" then
             mp3FolderPath="./mp3/"
+            lrcFolderPath="./lrc/"
         else
             mp3FolderPath="./mp3/"&Request.QueryString("level")+"/"
+            lrcFolderPath="./lrc/"&Request.QueryString("level")+"/"
         end if
          %>
     <!--#include file="sellgirl_mediaPlayer.asp"-->
