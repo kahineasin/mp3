@@ -11,6 +11,8 @@ pageTitle="some mp3"
             pageTitle="我的翻唱"
         elseif Request.QueryString("level")="k" then
             pageTitle="k歌伴奏"
+        elseif Request.QueryString("level")="v" then
+            pageTitle="视频"
         end if
          %>
     <title><%Response.Write pageTitle %></title>
@@ -24,9 +26,14 @@ pageTitle="some mp3"
 <!--    <script type="text/javascript" src="http://sellgirl.com/Content/js/sellgirl/EleResize.js"></script>
     <script type="text/javascript" src="http://sellgirl.com/Content/js/sellgirl/sellgirl.js"></script>-->
     
-    <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/EleResize.js"></script>
+    <!--如果不播放flv文件,可以去掉flv.min.js引用-->
+    <script type="text/javascript" src="https://html.sellgirl.com/js/flv.min.js"></script>
+<!--    <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/EleResize.js"></script>
     <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/sellgirl.js"></script>
-    <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/pfUtil.js"></script>
+    <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/pfUtil.js"></script>-->
+    <script type="text/javascript" src="https://html.sellgirl.com/js/EleResize.js"></script>
+    <script type="text/javascript" src="https://html.sellgirl.com/js/sellgirl.js"></script>
+    <script type="text/javascript" src="https://html.sellgirl.com/js/pfUtil.js"></script>
     <!--<script  type="text/JavaScript"  src="script/pfUtil.js" ></script>-->
     <!--<script type="text/javascript" src="http://192.168.1.52:19005/Content/js/sellgirl/EleResize.js"></script>
     <script type="text/javascript" src="http://192.168.1.52:19005/Content/js/sellgirl/sellgirl.js"></script>-->

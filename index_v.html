@@ -1,0 +1,88 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    
+    <title>视频</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=0.46, maximum-scale=0.46">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <!--<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">-->
+
+    <script  type="text/JavaScript"  src="script/jquery-1.7.1.min.js" ></script>
+<!--    <script type="text/javascript" src="http://sellgirl.com/Content/js/sellgirl/EleResize.js"></script>
+    <script type="text/javascript" src="http://sellgirl.com/Content/js/sellgirl/sellgirl.js"></script>-->
+    
+    <!--如果不播放flv文件,可以去掉flv.min.js引用-->
+    <script type="text/javascript" src="https://html.sellgirl.com/js/flv.min.js"></script>
+<!--    <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/EleResize.js"></script>
+    <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/sellgirl.js"></script>
+    <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/pfUtil.js"></script>-->
+    <script type="text/javascript" src="https://html.sellgirl.com/js/EleResize.js"></script>
+    <script type="text/javascript" src="https://html.sellgirl.com/js/sellgirl.js"></script>
+    <script type="text/javascript" src="https://html.sellgirl.com/js/pfUtil.js"></script>
+    <!--<script  type="text/JavaScript"  src="script/pfUtil.js" ></script>-->
+    <!--<script type="text/javascript" src="http://192.168.1.52:19005/Content/js/sellgirl/EleResize.js"></script>
+    <script type="text/javascript" src="http://192.168.1.52:19005/Content/js/sellgirl/sellgirl.js"></script>-->
+    <script type="text/javascript">
+        $(function () {
+            //背景图片
+            //        sellgirl.backgroundImg(document.body, 'img/web_sasha_1920x1080_02.jpg', { w: 2300, h: 2300, s: { x: 0, y: 1150 }, e: { x: 2300, y: 1150} }, { thumbnail: 'img/web_sasha_thumbnail.jpg' });
+            //            sellgirl.backgroundImg(document.body, 'img/web_sasha_1920x1080_02.jpg', { w: 2300, h: 2300, s: { x: 0, y: 1150 }, e: { x: 2300, y: 1150} }, null, { thumbnail: 'img/web_sasha_thumbnail.jpg' });
+            sellgirl.backgroundImg(document.body, 'img/web_sasha_1920x1080_02.jpg', { w: 2300, h: 2300, s: { x: 0, y: 1150 }, e: { x: 2300, y: 1150 } }, { opacity: 0.5 }, { thumbnail: 'img/web_sasha_thumbnail.jpg' });
+        });
+    </script>
+
+</head>
+<body style="margin: 0px;">
+    <div style="position:absolute;right:0px;top:0px;z-index:3"><a href="category.html">分类目录</a></div>
+    <!--<canvas id="h5Image" style="position:absolute;z-index:2;"></canvas>-->
+    <!--HTML5播放器,自动读取变量mp3FolderPath这个文件夹下的文件,自动识别是video还是audio,20180117-->
+<!--<link rel="stylesheet" type="text/css" href="http://video.sellgirl.com/css/sellgirl_player_list.css">-->
+<link rel="stylesheet" type="text/css" href="https://kahineasin.github.io/htmlAll/css/sellgirl_player_list.css">
+
+<script type="text/javascript" src="script/html5media.min.js"></script>
+
+<div class="audioContainer">
+    <div class="videoLayer">
+    </div>
+    <div class="sellgirl_player_list_container">
+        <div class="sellgirl_player_list">
+            <div class="sellgirl_player_list_toolbar">
+                <!-- <a style="clear: both" href="javascript:;"  onclick="return nextPlayMode(this)">&lt;Order Repeat&gt;</a> -->
+                <a href="javascript:;" id="nextPlayModeBtn" >&lt;随机播放&gt;</a> <a href="javascript:;" id="playNextBtn"
+                    >&lt;下一首&gt;</a> <a id="selectSongBtn" href="javascript:;"
+                        >&lt;选歌...&gt;</a> <a href="javascript:;" id="nextLrcModeBtn"
+                            >&lt;单行歌词...&gt;</a>
+            </div>
+            <hr />
+            <div class="sellgirl_player_list_top">
+                <a  href='#' src='./mp3/v/1.suika' lrc='./lrc/v/1.suika.lrc' sgIdx='0' sgFmts='mp4'>1.suika</a><a  href='#' src='./mp3/v/2.银白钢铁x2' lrc='./lrc/v/2.银白钢铁x2.lrc' sgIdx='1' sgFmts='mp4'>2.银白钢铁x2</a><a  href='#' src='./mp3/v/3.video' lrc='./lrc/v/3.video.lrc' sgIdx='2' sgFmts='mp4'>3.video</a><a  href='#' src='./mp3/v/4.pcmanVideo' lrc='./lrc/v/4.pcmanVideo.lrc' sgIdx='3' sgFmts='mp4'>4.pcmanVideo</a><a  href='#' src='./mp3/v/5.deemo_lv10' lrc='./lrc/v/5.deemo_lv10.lrc' sgIdx='4' sgFmts='mp4'>5.deemo lv10</a><a  href='#' src='./mp3/v/diary' lrc='./lrc/v/diary.lrc' sgIdx='5' sgFmts='mp3'>diary</a><a  href='#' src='./mp3/v/IGNITE_完整版' lrc='./lrc/v/IGNITE_完整版.lrc' sgIdx='6' sgFmts='mp4'>IGNITE 完整版</a><a  href='#' src='./mp3/v/于承惠双手剑_剑论要诀歌' lrc='./lrc/v/于承惠双手剑_剑论要诀歌.lrc' sgIdx='7' sgFmts='flv'>于承惠双手剑 剑论要诀歌</a><a  href='#' src='./mp3/v/于承惠双手剑_祭坛演练' lrc='./lrc/v/于承惠双手剑_祭坛演练.lrc' sgIdx='8' sgFmts='flv'>于承惠双手剑 祭坛演练</a><a  href='#' src='./mp3/v/于承惠双手剑_舞台演练' lrc='./lrc/v/于承惠双手剑_舞台演练.lrc' sgIdx='9' sgFmts='flv'>于承惠双手剑 舞台演练</a><a  href='#' src='./mp3/v/于承惠双手剑套路慢放及双手剑单练行功歌诀' lrc='./lrc/v/于承惠双手剑套路慢放及双手剑单练行功歌诀.lrc' sgIdx='10' sgFmts='flv'>于承惠双手剑套路慢放及双手剑单练行功歌诀</a>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="sellgirl_player_lrcContainer">
+        <ul id="lrclist" class="sellgirl_player_lrc">
+            <!-- 保证歌词在正中间 -->
+        </ul>
+        <!-- <p>无歌词</p> -->
+    </div>
+<input type='hidden' value='' id='firstSongIdx' />
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //var idxStr = document.getElementById("firstSongIdx").value;
+        //var idx = idxStr !== undefined && idxStr !== null && idxStr !== '' ? (parseInt(idxStr) - 1) : null;
+        var urlParam = $pf.getRequest();
+        var idx = urlParam.idx !== undefined && urlParam.idx !== null && urlParam.idx !== '' ? (parseInt(urlParam.idx) - 1) : null;
+        sellgirl.createMusicPlayer($('.audioContainer'), { idx: idx }).ready();
+    });
+</script>
+
+
+</body>
+</html>
