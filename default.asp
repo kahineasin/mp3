@@ -27,7 +27,7 @@ pageTitle="some mp3"
     <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/EleResize.js"></script>
     <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/sellgirl.js"></script>
     <script type="text/javascript" src="https://kahineasin.github.io/htmlAll/js/pfUtil.js"></script>
-    <script  type="text/JavaScript"  src="script/pfUtil.js" ></script>
+    <!--<script  type="text/JavaScript"  src="script/pfUtil.js" ></script>-->
     <!--<script type="text/javascript" src="http://192.168.1.52:19005/Content/js/sellgirl/EleResize.js"></script>
     <script type="text/javascript" src="http://192.168.1.52:19005/Content/js/sellgirl/sellgirl.js"></script>-->
     <script type="text/javascript">
