@@ -1,0 +1,5 @@
+比如,mp3有增减
+
+就用chrome运行default.asp页面
+在调试器中复制 .sellgirl_player_list_top 节点
+替换到 index_k.html 里的代码, 即可
