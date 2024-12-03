@@ -82,7 +82,7 @@
         var idx = urlParam.idx !== undefined && urlParam.idx !== null && urlParam.idx !== '' ? (parseInt(urlParam.idx) - 1) : null;
         sellgirl.createMusicPlayer($('.audioContainer'), { idx:idx }).ready();
 
-        //测试导出歌url到json
+        // //测试导出歌url到json, 实测可用
         var arr=[];
         var obj={
             title:"粤曲",
@@ -93,9 +93,13 @@
                     var path=value.attributes.getNamedItem('src').nodeValue;
                     path=path.substring(1);
                     path='https://mp3.sellgirl.com'+path;
+                    
+                    var lrcPath=value.attributes.getNamedItem('lrc').nodeValue;
+                    lrcPath=lrcPath.substring(1);
+                    lrcPath='https://mp3.sellgirl.com'+lrcPath;
                     arr.push({
                         url:path+'.'+value.attributes.getNamedItem('sgfmts').nodeValue.split(',')[0],
-                        lrc:value.attributes.getNamedItem('lrc').nodeValue
+                        lrc:lrcPath
                     })
                 });
                 obj.song=arr;
