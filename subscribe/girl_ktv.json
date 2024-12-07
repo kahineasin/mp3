@@ -1,5 +1,5 @@
 {
-    "title": "ktv",
+    "title": "girl_ktv",
     "song": [
         {
             "url": "https://mp3.sellgirl.com/mp3/k/001.电灯胆_邓丽欣.mp3",
@@ -64,18 +64,6 @@
         {
             "url": "https://mp3.sellgirl.com/mp3/k/Cry_On_My_Shoulder_伴奏R2.mp3",
             "lrc": "https://mp3.sellgirl.com/lrc/k/Cry_On_My_Shoulder_伴奏R2.lrc"
-        },
-        {
-            "url": "https://mp3.sellgirl.com/mp3/k/diary.mp3",
-            "lrc": "https://mp3.sellgirl.com/lrc/k/diary.lrc"
-        },
-        {
-            "url": "https://mp3.sellgirl.com/mp3/k/the105days.mp3",
-            "lrc": "https://mp3.sellgirl.com/lrc/k/the105days.lrc"
-        },
-        {
-            "url": "https://mp3.sellgirl.com/mp3/k/Yomawari.mp3",
-            "lrc": "https://mp3.sellgirl.com/lrc/k/Yomawari.lrc"
         }
     ]
 }
