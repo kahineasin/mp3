@@ -88,6 +88,8 @@
         var urlParam = $pf.getRequest();
         var idx = urlParam.idx !== undefined && urlParam.idx !== null && urlParam.idx !== '' ? (parseInt(urlParam.idx) - 1) : null;
         sellgirl.createMusicPlayer($('.audioContainer'), { idx: idx }).ready();
+        $('#selectSongBtn').click();
+        // $('#playNextBtn').click();
     });
 </script>
 
