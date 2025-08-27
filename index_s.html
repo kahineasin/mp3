@@ -67,7 +67,7 @@
                 <a  href='#' src='./mp3/s/龙脊雪山ost印象曲' lrc='' sgIdx='14' sgFmts='mp3'>龙脊雪山ost印象曲</a>
 				<a  href='#' src='./mp3/s/Is_my_life' lrc='./lrc/s/Is_my_life.lrc' sgIdx='14' sgFmts='mp3'>Is_my_life</a>
 				<a  href='#' src='./mp3/s/the_White_Witch' lrc='' sgIdx='15' sgFmts='mp3'>the_White_Witch</a>
-				<a  href='#' src='./mp3/s/龙珠GT主题曲_坂井泉水' lrc='' sgIdx='16' sgFmts='mp3'>龙珠GT主题曲_坂井泉水</a>
+				<a  href='#' src='./mp3/s/龙珠GT主题曲_坂井泉水' lrc='./lrc/s/龙珠GT主题曲_坂井泉水.lrc' sgIdx='16' sgFmts='mp3'>龙珠GT主题曲_坂井泉水</a>
                 
             </div>
         </div>
@@ -102,8 +102,12 @@
                     path=path.substring(1);
                     path='https://mp3.sellgirl.com'+path;                    
                     var lrcPath=value.attributes.getNamedItem('lrc').nodeValue;
-                    lrcPath=lrcPath.substring(1);
-                    lrcPath='https://mp3.sellgirl.com'+lrcPath;
+                    // debugger;
+                    if(sellgirl.isEmpty(lrcPath)){}
+                    else{
+                        lrcPath=lrcPath.substring(1);
+                        lrcPath='https://mp3.sellgirl.com'+lrcPath;
+                    }
                     arr.push({
                         url:path+'.'+value.attributes.getNamedItem('sgfmts').nodeValue.split(',')[0],
                         lrc:lrcPath
