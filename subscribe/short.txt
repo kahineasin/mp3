@@ -1,0 +1,11 @@
+{
+  "title": "short",
+  "song": [
+    {
+      "url": "https://mp3.sellgirl.com/mp3/test/short.mp3",
+      "lrc": "https://mp3.sellgirl.com/lrc/k/003.电灯胆_邓丽欣_伴奏.lrc"
+    },
+    {
+      "url": "https://mp3.sellgirl.com/mp3/test/short2.mp3",
+      "lrc": "https://mp3.sellgirl.com/lrc/k/003.电灯胆_邓丽欣_伴奏.lrc"
+    }]}
